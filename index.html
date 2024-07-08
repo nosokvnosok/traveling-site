@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AnexTour</title>
-    <link
-      rel="shortcut icon"
-      href="img/logo.svg"
-      type="image/x-icon"
-    />
+    <title>DemidovTour</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -21,13 +17,19 @@
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
+        data-hx-get="global/header-nav.partial.html"
       ></nav>
       <div>
-        <h1>Agency AnexTour</h1>
+        <h1>Agency DemidovTour</h1>
       </div>
     </header>
     <main></main>
-    <footer></footer>
+    <footer>
+      <p
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global/footer-p.partial.html"
+      ></p>
+    </footer>
   </body>
 </html>
